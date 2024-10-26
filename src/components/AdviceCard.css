@@ -1,0 +1,63 @@
+.advice-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.advice-card:hover {
+  transform: scale(1.05);
+}
+
+.advice-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.advice-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.advice-button:hover {
+  background-color: #0056b3;
+}
+
+.advice-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .advice-text {
+    font-size: 1.2rem;
+  }
+  .advice-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .advice-card {
+    padding: 20px;
+  }
+  .advice-text {
+    font-size: 1rem;
+  }
+}
